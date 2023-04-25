@@ -1,4 +1,6 @@
 import React from "react";
+import styles from "./Navbar.module.scss";
+import classNames from "classnames";
 
 const Navbar = () => {
   const menuItems = [
@@ -35,20 +37,22 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="container-fluid navbar">
-      <div className="row">
-        <div className="col-4">
-          <h3>Codebears</h3>
-        </div>
-        <div className="col-4">
-          <ul>
-            {menuItems.map((e: any) => {
-              return <li key={e.id}>{e.name}</li>;
-            })}
-          </ul>
-        </div>
-        <div className="col-4">
-          <button>Make it happen</button>
+    <div className={` ${styles.navbar} container-fluid navbar`}>
+      <div className="container navbar_container">
+        <div className={`row ${styles.navbar_inner}`}>
+          <div className={`${styles.elements} col-3 logo`}>
+            <a>Codebears</a>
+          </div>
+          <div className={`${styles.elements} col-6`}>
+            <ul>
+              {menuItems.map((e: any) => {
+                return <li key={e.id}>{e.name}</li>;
+              })}
+            </ul>
+          </div>
+          <div className={`${styles.elements} col-3 ${styles.nav_btn}`}>
+            <button>Make it happen</button>
+          </div>
         </div>
       </div>
     </div>

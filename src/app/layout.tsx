@@ -1,10 +1,10 @@
 import Head from "next/head";
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Kanit } from "next/font/google";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Navbar } from "react-bootstrap";
-import SSRProvider from "react-bootstrap/SSRProvider";
-const inter = Inter({ subsets: ["latin"] });
+import Navbar from "./components/Navbar/Navbar";
+
+const kanit = Kanit({ weight: "300", subsets: ["latin"] });
 
 export const metadata = {
   title: "Create Next App",
@@ -31,12 +31,10 @@ export default function RootLayout({
           integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
         />
       </Head>
-      <SSRProvider>
-        <body className={inter.className}>
-          <Navbar />
-          {children}
-        </body>
-      </SSRProvider>
+      <body className={kanit.className}>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }

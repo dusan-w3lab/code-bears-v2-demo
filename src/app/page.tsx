@@ -1,12 +1,16 @@
-import Link from "next/link";
 import styles from "./page.module.css";
 import HeroSection from "./components/hero-section/HeroSection";
+import MiniAboutUsSection from "./components/Mini-About-Us-Section/MiniAboutUsSection";
+import ServicesSection from "./components/Services-section/ServicesSection";
+import HorizontalLine from "./components/Horizontal-line/HorizontalLine";
+
 export default function homepage() {
   return (
     <main className={styles.main}>
-      <h1>Code Bears - v2</h1>
-      <Link href="/homepage"> Homepage</Link>
       <HeroSection />
+      <MiniAboutUsSection />
+      <HorizontalLine />
+      <ServicesSection />
     </main>
   );
 }

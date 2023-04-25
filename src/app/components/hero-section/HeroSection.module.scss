@@ -1,3 +1,49 @@
-.demo {
-    color: red;
+.hero {
+    background: linear-gradient(180deg, #E8E8FA 0%, #F8F8FE 100%);
+    p {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        color: #000C36;
+    }
+    padding: 100px 0;
+    h2 {    
+        font-weight: 700;
+        font-size: 58px;
+        line-height: 110%;
+        background: linear-gradient(90deg, #000C36 0%, #8091C1 96.35%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+    h2, p {
+        margin-bottom: 40px ;
+    }
+    button {
+        background: #000C36;
+        border-radius: 8px;
+        padding: 10px 50px;
+        color: white;
+        border: none;
+    }
+    .collaboration {
+        display: flex;
+        flex-direction: column;
+        padding-top: 150px ;
+         p{
+            display: flex;
+            justify-content: center;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 23px;
+            color: #686C75;
+        }
+    }
+    .logo_companies {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 2rem;
+    }
 }
