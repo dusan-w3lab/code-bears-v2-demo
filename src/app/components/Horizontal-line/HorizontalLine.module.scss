@@ -1,0 +1,24 @@
+.horizontal_line {
+    border-bottom: 1px solid #D4D4D4;
+    position: relative;
+    z-index: 22222;
+    
+}
+.left_square {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #D4D4D4;
+    position: absolute;
+    left: -7.5px;
+    top: -8.5px;
+    background-color: white;
+}
+.right_square {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #D4D4D4;
+    position: absolute;
+    right: -7.5px;
+    top: -8.5px;
+    background-color: white;
+}

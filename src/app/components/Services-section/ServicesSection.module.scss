@@ -1,0 +1,71 @@
+.services_section {
+    border-left: 1px solid #D4D4D4;
+    border-right: 1px solid #D4D4D4;
+    font-weight: 500;
+    background-color: #FAFAFC;
+    border-bottom: 1px solid #D4D4D4;
+    padding-bottom: 80px;
+    .services_card-title{
+        display: flex;
+        align-items: center;
+    }
+    p {
+        padding: 0;
+        margin: 0;
+    }
+    h2 {
+        margin-bottom: 50px;
+        font-size: 48px;
+        line-height: 60px;
+    }
+    span {
+        color: #5F3DD8;
+    }
+    .card_desc {
+        border-radius: 16px;
+        background-color: white;
+        margin-right: 20px;
+        padding: 40px;
+    }
+    .card_wrapper:nth-child(2) {
+        margin: 10px 0;
+    }
+    
+}
+.title_col{
+    h2 {
+     margin-top: 80px;
+    padding: 0;
+    position: relative;
+    &::before{
+        content: "";
+        padding-left: 2px;
+        border-left: 1px solid #5F3DD8;
+        width: 1px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: -13px;
+    }
+    }
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card_wrapper {
+    border-radius: 16px;
+    border: 1.6px solid transparent;
+    cursor: pointer;
+}
+
+.card_wrapper:hover {
+    background: linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(45deg, slateblue, coral) border-box;
+}
+
+.active_card {
+    background: linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(45deg, slateblue, coral) border-box;
+}
