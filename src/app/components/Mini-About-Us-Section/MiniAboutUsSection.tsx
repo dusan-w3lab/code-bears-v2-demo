@@ -1,39 +1,53 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import styles from "./MiniAboutUsSection.module.scss";
 import Image from "next/image";
 import imgLeft from "../../../../public/assets/mini-about-us/img-1.png";
+import imgRight from "../../../../public/assets/mini-about-us/img-2.png";
+import { BsArrowUpRight } from "react-icons/bs";
 
 const MiniAboutUsSection = () => {
+  const [coords, setCoords] = useState({ x: 0, y: 0 });
+
+  const handleMouseOver = (event: any) => {
+    const rect = event.target.getBoundingClientRect();
+    setCoords({
+      x: event.clientX - rect.left,
+      y: event.clientY - rect.top,
+    });
+  };
+
   return (
     <section className={`${styles.about__area}`}>
-      <div className={`container ${styles.line} g-0 pt-140 pb-130`}>
+      <div className={`container ${styles.line} g-0 `}>
         <span className={`${styles.line_3}`}></span>
         <div className={`${styles.cont} row`}>
           <div className="col-xxl-12">
             <div className={`${styles.about__title_wrapper}`}>
-              <h3 className={`${styles.sec_title} title-anim`}>
-                We unlock the potential of your business with creative design
-              </h3>
+              <h2 className={`${styles.sec_title} title-anim`}>
+                Years of experience in <br />
+                software engineering
+              </h2>
             </div>
             <div className={`${styles.about__content_wrapper}`}>
               <div className={`${styles.square_edge_left}`}></div>
               <div className={`${styles.square_edge_right}`}></div>
-
               <div className={`${styles.about__img}`}>
                 <div className={`${styles.img_anim}`}>
-                  <img
-                    src="assets/imgs/about/1/1.jpg"
-                    alt="About Image"
-                    data-speed="0.3"
+                  <Image
+                    src={imgLeft}
+                    width={590}
+                    height={480}
+                    alt="left-image"
                   />
-                  {/* <Image src={imgLeft} width={526} height={49} /> */}
                 </div>
 
                 <div className={`${styles.about__img_right}`}>
-                  <img
-                    src="assets/imgs/about/1/2.jpg"
-                    alt="About Image Right"
-                    data-speed="0.5"
+                  <Image
+                    src={imgRight}
+                    width={220}
+                    height={200}
+                    alt="right-image"
                   />
                   <div className={`${styles.shape}`}>
                     <div className="secondary" data-speed="0.9"></div>
@@ -52,12 +66,21 @@ const MiniAboutUsSection = () => {
                   expertise
                 </p>
 
-                <div className={`cursor-btn ${styles.btn_wrapper}`}>
+                <div
+                  className={`cursor-btn ${styles.btn_wrapper}`}
+                  onMouseOver={handleMouseOver}
+                >
                   <a
                     className={`${styles.btn_item} ${styles.wc_btn_primary} btn_hover`}
                     href="about.html"
                   >
-                    <span></span> Explore Us
+                    <span
+                      style={{
+                        top: `${coords.y}px`,
+                        left: `${coords.x}px`,
+                      }}
+                    ></span>
+                    Explore Us <BsArrowUpRight size={14} />
                     <i className="fa-solid fa-arrow-right"></i>
                   </a>
                 </div>

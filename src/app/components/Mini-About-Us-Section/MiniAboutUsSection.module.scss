@@ -24,9 +24,6 @@ $background-color_7: var(--gray-11);
 	padding-bottom: 130px;
 }
 
-.pt-140 {
-	padding-top: 140px;
-}
 // * {
 // 	margin: 0;
 // 	padding: 0;
@@ -153,39 +150,35 @@ $background-color_7: var(--gray-11);
 	-ms-flex-pack: center;
 	justify-content: center;
 	width: 170px;
-	height: 170px;
+	height: 120px;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 1.3;
 	text-transform: capitalize;
 	color: $color_1;
 	border: 1px solid var(--gray);
-	border-radius: 100%;
 	position: relative;
 	overflow: hidden;
 	-webkit-transition: all 0.3s;
 	transition: all 0.3s;
+	border: 1px solid ;
 	&:hover {
-		color: blue;
-		border: 1px solid var(yellow);
+		
 		span {
 			width: 350px;
 			height: 350px;
+			color:white
 		}
 	}
-	i {
-		-webkit-transform: rotate(-45deg);
-		transform: rotate(-45deg);
-		padding-left: 5px;
-	}
+
 	span {
 		position: absolute;
 		content: "";
 		width: 20px;
 		height: 20px;
-		left: 0;
-		top: 0;
-		background-color: orange;
+		// left: -100px;
+		// top: -30px;
+		background-color: purple;
 		z-index: -1;
 		border-radius: 100%;
 		-webkit-transition: all 0.7s;
@@ -214,13 +207,24 @@ $background-color_7: var(--gray-11);
 	position: absolute;
 }
 .sec_title {
+	padding-left: 13px;
 	font-weight: 500;
-	font-size: 60px;
+	font-size: 48px;
 	line-height: 1;
 	color: $color_2;
+	position: relative;
+	   &::before{
+		   content: "";
+		   padding-left: 2px;
+		   border-left: 1px solid #5F3DD8;
+		   width: 1px;
+		   height: 100%;
+		   position: absolute;
+		   top: 0;
+		   left: 0px;
+	   
+	   }
 }
-
-
 .title-line {
 	overflow: hidden;
 }
@@ -239,7 +243,6 @@ $background-color_7: var(--gray-11);
 		padding-top: 150px;
 	}
 }
-
 .about__area {
 	overflow: hidden;
 	background-color: $background-color_5;
@@ -251,7 +254,7 @@ $background-color_7: var(--gray-11);
 }
 
 .about__title_wrapper {
-	padding-bottom: 60px;
+	padding-top: 80px;
 }
 .about__content {
 	padding-top: 65px;
@@ -271,9 +274,8 @@ $background-color_7: var(--gray-11);
 	-ms-grid-columns: 1fr 80px 1.8fr;
 	grid-template-columns: 1fr 1.8fr;
 	grid-gap: 80px;
-    // border-bottom:1px solid #D4D4D4;
-     position: relative;
-
+	padding-bottom: 80px;
+	
 }
 .about__img {
 	img {
