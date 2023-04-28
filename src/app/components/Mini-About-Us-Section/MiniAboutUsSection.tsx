@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import styles from "./MiniAboutUsSection.module.scss";
 import Image from "next/image";
 import imgLeft from "../../../../public/assets/mini-about-us/img-1.png";
@@ -8,7 +8,7 @@ import { BsArrowUpRight } from "react-icons/bs";
 
 const MiniAboutUsSection = () => {
   const [coords, setCoords] = useState({ x: 0, y: 0 });
-
+  const [top, setTop] = useState(280);
   const handleMouseOver = (event: any) => {
     const rect = event.target.getBoundingClientRect();
     setCoords({
@@ -16,7 +16,35 @@ const MiniAboutUsSection = () => {
       y: event.clientY - rect.top,
     });
   };
+  const ref = useRef(null);
 
+  const [bottomPosition, setBottomPosition] = useState(0);
+  const [scrollDir, setScrollDir] = useState("down");
+  const prevScrollY = useRef(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      if (prevScrollY.current < currentScrollY) {
+        setScrollDir("down");
+
+        console.log("down");
+      } else if (prevScrollY.current > currentScrollY) {
+        setScrollDir("up");
+      }
+      prevScrollY.current = currentScrollY;
+      if (window.pageYOffset > 480 && scrollDir === "down") setTop(top + 2.5);
+      else if (window.pageYOffset < 1400 && scrollDir === "up")
+        setTop(top - 2.5);
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [window.pageYOffset, top, scrollDir]);
+  console.log(window.pageYOffset);
   return (
     <section className={`${styles.about__area}`}>
       <div className={`container ${styles.line} g-0 `}>
@@ -34,15 +62,19 @@ const MiniAboutUsSection = () => {
               <div className={`${styles.square_edge_right}`}></div>
               <div className={`${styles.about__img}`}>
                 <div className={`${styles.img_anim}`}>
-                  <Image
+                  {/* <Image
                     src={imgLeft}
                     width={590}
                     height={480}
                     alt="left-image"
-                  />
+                  /> */}
                 </div>
 
-                <div className={`${styles.about__img_right}`}>
+                <div
+                  className={`${styles.about__img_right}`}
+                  style={{ top: `${top}px` }}
+                  ref={ref}
+                >
                   <Image
                     src={imgRight}
                     width={220}
