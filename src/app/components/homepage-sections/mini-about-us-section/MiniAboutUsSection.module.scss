@@ -382,7 +382,12 @@
 		overflow: hidden;
 		position: relative;
 		width: 100%;
-		height: 565px;
+		height: 496px;
+		background: url(../../../../../public/assets/mini-about-us//img-1.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-attachment: fixed;
+
 		img {
 			position: absolute;
 			bottom: 0;
