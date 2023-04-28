@@ -1,15 +1,17 @@
-import styles from "./HeroSection.module.scss";
-import l1 from "../../../../public/assets/companies-logo/ATIProject.png";
-import l2 from "../../../../public/assets/companies-logo/cpt-grey 1.png";
-import l3 from "../../../../public/assets/companies-logo/eagle-grey 1.png";
-import l4 from "../../../../public/assets/companies-logo/edelswiss-grey 1.png";
-import l5 from "../../../../public/assets/companies-logo/mts-grey 1.png";
-import l6 from "../../../../public/assets/companies-logo/w3-lab-grey 1.png";
+import l1 from "../../../../../public/assets/companies-logo/ATIProject.png";
+import l2 from "../../../../../public/assets/companies-logo/cpt-grey 1.png";
+import l3 from "../../../../../public/assets/companies-logo/eagle-grey 1.png";
+import l4 from "../../../../../public/assets/companies-logo/edelswiss-grey 1.png";
+import l5 from "../../../../../public/assets/companies-logo/mts-grey 1.png";
+import l6 from "../../../../../public/assets/companies-logo/w3-lab-grey 1.png";
+
 import Image from "next/image";
+
+import styles from "./HeroSection.module.scss";
 
 const HeroSection = () => {
   return (
-    <div className={`${styles.hero} container-fluid`}>
+    <div className={`${styles.hero}`}>
       <div className="container">
         <div className="row">
           <div className="col-6">
@@ -25,10 +27,10 @@ const HeroSection = () => {
             </p>
             <button>Our Services</button>
           </div>
-          <div className="col-6"></div>
+          <div className="col-6">3D</div>
         </div>
-        <div className={`${styles.collaboration} container`}>
-          <div className="title_colaborate">
+        <div className={`${styles.collaboration}`}>
+          <div>
             <p>We collaborate with ambitious brands and people.</p>
           </div>
           <div className={styles.logo_companies}>

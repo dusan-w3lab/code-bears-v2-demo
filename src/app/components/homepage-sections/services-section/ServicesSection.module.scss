@@ -30,23 +30,22 @@
     .card_wrapper:nth-child(2) {
         margin: 10px 0;
     }
-    
 }
 .title_col{
     h2 {
-     margin-top: 80px;
+    margin-top: 80px;
     padding: 0;
     position: relative;
-    &::before{
-        content: "";
-        padding-left: 2px;
-        border-left: 1px solid #5F3DD8;
-        width: 1px;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: -13px;
-    }
+        &::before{
+            content: "";
+            padding-left: 2px;
+            border-left: 1px solid #5F3DD8;
+            width: 1px;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: -13px;
+        }
     }
 }
 .content {
