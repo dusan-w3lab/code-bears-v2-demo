@@ -1,10 +1,12 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
-import styles from "./MiniAboutUsSection.module.scss";
 import Image from "next/image";
-import imgLeft from "../../../../public/assets/mini-about-us/img-1.png";
-import imgRight from "../../../../public/assets/mini-about-us/img-2.png";
+
 import { BsArrowUpRight } from "react-icons/bs";
+// import imgLeft from "../../../../../public/assets/mini-about-us/img-1.png";
+import imgRight from "../../../../../public/assets/mini-about-us/img-2.png";
+
+import styles from "./MiniAboutUsSection.module.scss";
 
 const MiniAboutUsSection = () => {
   const [coords, setCoords] = useState({ x: 0, y: 0 });
@@ -47,7 +49,7 @@ const MiniAboutUsSection = () => {
   console.log(window.pageYOffset);
   return (
     <section className={`${styles.about__area}`}>
-      <div className={`container ${styles.line} g-0 `}>
+      <div className={`container ${styles.line} g-0`}>
         <span className={`${styles.line_3}`}></span>
         <div className={`${styles.cont} row`}>
           <div className="col-xxl-12">
@@ -58,8 +60,6 @@ const MiniAboutUsSection = () => {
               </h2>
             </div>
             <div className={`${styles.about__content_wrapper}`}>
-              <div className={`${styles.square_edge_left}`}></div>
-              <div className={`${styles.square_edge_right}`}></div>
               <div className={`${styles.about__img}`}>
                 <div className={`${styles.img_anim}`}>
                   {/* <Image
@@ -87,7 +87,6 @@ const MiniAboutUsSection = () => {
                   </div>
                 </div>
               </div>
-
               <div className={`${styles.about__content} text_anim`}>
                 <p>
                   From traditional PR and thought leadership campaigns to
@@ -97,7 +96,6 @@ const MiniAboutUsSection = () => {
                   world’s biggest agencies and brands because they trust our
                   expertise
                 </p>
-
                 <div
                   className={`cursor-btn ${styles.btn_wrapper}`}
                   onMouseOver={handleMouseOver}
@@ -111,7 +109,7 @@ const MiniAboutUsSection = () => {
                         top: `${coords.y}px`,
                         left: `${coords.x}px`,
                       }}
-                    ></span>
+                    />
                     Explore Us <BsArrowUpRight size={14} />
                     <i className="fa-solid fa-arrow-right"></i>
                   </a>

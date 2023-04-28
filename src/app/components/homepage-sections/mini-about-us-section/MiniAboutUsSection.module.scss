@@ -1,76 +1,7 @@
-$color_1: var(--black-3);
-$color_2: var(--black-2);
-$color_3: var(--gray-2);
-$color_4: var(--white);
-$color_5: #fff;
-$color_6: rgba(227, 227, 227, 0.78);
-$font-family_1: Kanit, sans-serif;
-$font-family_2: newYork;
-$background-color_1: var(--primary);
-$background-color_2: var(--secondary);
-$background-color_3: var(--black-7);
-$background-color_4: var(--black-2);
-$background-color_5: var(--white);
-$background-color_6: var(--black-5);
-$background-color_7: var(--gray-11);
-
-@font-face {
-	font-family: newYork;
-	src: url(/assets/fonts/newyork/FontsFree-Net-NewYork.ttf);
-	font-weight: 400;
-}
-
 .pb-130 {
 	padding-bottom: 130px;
 }
 
-// * {
-// 	margin: 0;
-// 	padding: 0;
-// }
-// body {
-// 	font-family: $font-family_1;
-// 	position: relative;
-// }
-// html {
-// 	scroll-behavior: smooth;
-// }
-// h1 {
-// 	position: relative;
-// 	z-index: 1;
-// 	padding: 0;
-// 	margin: 0;
-// }
-// h2 {
-// 	position: relative;
-// 	z-index: 1;
-// 	padding: 0;
-// 	margin: 0;
-// }
-// h3 {
-// 	position: relative;
-// 	z-index: 1;
-// 	padding: 0;
-// 	margin: 0;
-// }
-// h4 {
-// 	position: relative;
-// 	z-index: 1;
-// 	padding: 0;
-// 	margin: 0;
-// }
-// h5 {
-// 	position: relative;
-// 	z-index: 1;
-// 	padding: 0;
-// 	margin: 0;
-// }
-// h6 {
-// 	position: relative;
-// 	z-index: 1;
-// 	padding: 0;
-// 	margin: 0;
-// }
 .btn_wrapper a {
 	text-decoration: none;
 	-webkit-transition: all 0.3s;
@@ -78,29 +9,6 @@ $background-color_7: var(--gray-11);
 	position: relative;
 	z-index: 1;
 }
-// p {
-// 	padding: 0;
-// 	margin: 0;
-// 	font-style: normal;
-// 	line-height: 1.5;
-// 	font-weight: 400;
-// 	font-size: 16px;
-// 	color: $color_1;
-// 	position: relative;
-// 	z-index: 1;
-// }
-// img {
-// 	margin: 0;
-// 	padding: 0;
-// 	position: relative;
-// 	z-index: 1;
-// }
-
-// .cont {
-//     position: relative;
-// }
-
-
 .line {
 	position: relative;
 	&::before {
@@ -129,14 +37,14 @@ $background-color_7: var(--gray-11);
 	.primary {
 		width: 54px;
 		height: 56px;
-		background-color: $background-color_1;
+		// background-color: $background-color_1;
 		margin-top: -37px;
 		margin-left: 24px;
 	}
 	.secondary {
 		width: 53px;
 		height: 56px;
-		background-color: $background-color_2;
+		// background-color: $background-color_2;
 	}
 }
 .wc_btn_primary {
@@ -155,7 +63,7 @@ $background-color_7: var(--gray-11);
 	font-size: 16px;
 	line-height: 1.3;
 	text-transform: capitalize;
-	color: $color_1;
+	// color: $color_1;
 	border: 1px solid var(--gray);
 	position: relative;
 	overflow: hidden;
@@ -176,8 +84,6 @@ $background-color_7: var(--gray-11);
 		content: "";
 		width: 20px;
 		height: 20px;
-		// left: -100px;
-		// top: -30px;
 		background-color: purple;
 		z-index: -1;
 		border-radius: 100%;
@@ -211,19 +117,18 @@ $background-color_7: var(--gray-11);
 	font-weight: 500;
 	font-size: 48px;
 	line-height: 1;
-	color: $color_2;
+	// color: $color_2;
 	position: relative;
-	   &::before{
-		   content: "";
-		   padding-left: 2px;
-		   border-left: 1px solid #5F3DD8;
-		   width: 1px;
-		   height: 100%;
-		   position: absolute;
-		   top: 0;
-		   left: 0px;
-	   
-	   }
+		&::before{
+			content: "";
+			padding-left: 2px;
+			border-left: 1px solid #5F3DD8;
+			width: 1px;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0px;
+		}
 }
 .title-line {
 	overflow: hidden;
@@ -245,7 +150,7 @@ $background-color_7: var(--gray-11);
 }
 .about__area {
 	overflow: hidden;
-	background-color: $background-color_5;
+	// background-color: $background-color_5;
 	.sec_title {
 		max-width: 770px;
 		position: relative;
@@ -264,7 +169,7 @@ $background-color_7: var(--gray-11);
 		font-weight: 400;
 		font-size: 18px;
 		line-height: 1.4;
-		color: $color_1;
+		// color: $color_1;
 		margin-bottom: 60px;
 	}
 }
@@ -292,7 +197,7 @@ $background-color_7: var(--gray-11);
 	}
 }
 .content {
-	color: $color_5;
+	// color: $color_5;
 	position: absolute;
 	bottom: 120px;
 	text-align: center;
@@ -301,10 +206,10 @@ $background-color_7: var(--gray-11);
 	font-size: 0.8em;
 	text-transform: uppercase;
 	p {
-		color: $color_4;
+		// color: $color_4;
 	}
 	a {
-		color: $color_6;
+		// color: $color_6;
 		text-decoration: none;
 		border-bottom: 1px solid currentColor;
 		&:hover {
@@ -478,7 +383,7 @@ $background-color_7: var(--gray-11);
 		position: relative;
 		width: 100%;
 		height: 496px;
-		background: url(../../../../public/assets/mini-about-us//img-1.png);
+		background: url(../../../../../public/assets/mini-about-us//img-1.png);
 		background-repeat: no-repeat;
 		background-size: contain;
 		background-attachment: fixed;

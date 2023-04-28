@@ -1,10 +1,12 @@
+import HeroSection from "./components/homepage-sections/hero-section/HeroSection";
+import MiniAboutUsSection from "./components/homepage-sections/mini-about-us-section/MiniAboutUsSection";
+import ServicesSection from "./components/homepage-sections/services-section/ServicesSection";
+import HorizontalLine from "./components/layout/layout-elements/horizontal-line/HorizontalLine";
+import CaseStudies from "./components/homepage-sections/case-studies/CaseStudies";
+import HowWeDoIt from "./components/homepage-sections/how-we-do-It/HowWeDoIt";
+import Homepage from './homepage/page'
+
 import styles from "./page.module.css";
-import HeroSection from "./components/hero-section/HeroSection";
-import MiniAboutUsSection from "./components/Mini-About-Us-Section/MiniAboutUsSection";
-import ServicesSection from "./components/Services-section/ServicesSection";
-import HorizontalLine from "./components/Horizontal-line/HorizontalLine";
-import CaseStudies from "./components/CaseStudies/CaseStudies";
-import HowWeDoIt from "./components/HowWeDoIt/HowWeDoIt";
 
 export default function homepage() {
   return (
@@ -16,6 +18,7 @@ export default function homepage() {
       <HorizontalLine />
       <CaseStudies />
       {/* <HowWeDoIt /> */}
+      <Homepage />
     </main>
   );
 }

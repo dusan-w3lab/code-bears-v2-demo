@@ -1,11 +1,14 @@
 "use client";
 import React, { useState } from "react";
-import Card from "./Components/Cards/Card";
-import styles from "./ServicesSection.module.scss";
+
+import Card from './Components/Cards/Card'
 import CardDescription from "./Components/CardDescription/CardDescription";
+
 import { CiLaptop } from "react-icons/ci";
 import { BsTablet } from "react-icons/bs";
 import { HiOutlineShoppingBag } from "react-icons/hi";
+
+import styles from "./ServicesSection.module.scss";
 
 const ServicesSection = () => {
   const [selected, setSelected] = useState(0);
@@ -45,22 +48,22 @@ const ServicesSection = () => {
       </div>
       <div className={`${styles.content} row`}>
         <div className="col-5">
-          {items.map((e: any, index: number) => {
-            return (
-              <div
-                className={`${styles.card_wrapper} ${
-                  e.id === selected ? styles.active_card : ""
-                }`}
-                key={e.id}
-                onClick={() => {
-                  setSelected(e.id);
-                  console.log(e.id, index);
-                }}
-              >
-                <Card title={e.name} icon={e.icon} />
-              </div>
-            );
-          })}
+          {
+            items.map((e: any, index: number) => {
+              return (
+                <div
+                  className={`
+                              ${styles.card_wrapper} 
+                              ${e.id === selected ? styles.active_card : ""}
+                            `}
+                  key={e.id}
+                  onClick={() => setSelected(e.id)}
+                >
+                  <Card title={e.name} icon={e.icon} />
+                </div>
+              );
+            })
+          }
         </div>
         <div className={`col-6 ${styles.card_desc}`}>
           <CardDescription text={items[selected].description} />

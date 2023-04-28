@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./Navbar.module.scss";
-import classNames from "classnames";
 
 const Navbar = () => {
   const menuItems = [
