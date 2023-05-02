@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className={`${styles["footer__area"]}`}>
       <div className={`${styles["footer__top"]}`}>
         <div className={`container ${styles["footer-line"]}`}></div>
-        <Image src={footerImg} width={780} height={560} alt="footer image" />
+        <Image src={footerImg} width={1160} height={662} alt="footer image" />
       </div>
 
       <div className={`${styles["footer__btm"]}`}>
