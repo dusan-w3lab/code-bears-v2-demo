@@ -18,11 +18,6 @@ $background-color_6: black;
 $background-color_7: var(--white);
 $background-color_8: var(--secondary);
 
-@font-face {
-	font-family: newYork;
-	src: url(/assets/fonts/newyork/FontsFree-Net-NewYork.ttf);
-	font-weight: 400;
-}
 @-webkit-keyframes wcRotate {
 	0% {
 		-webkit-transform: rotate(0) scale(1.1);

@@ -1,15 +1,12 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
-
 import { BsArrowUpRight } from "react-icons/bs";
-// import imgLeft from "../../../../../public/assets/mini-about-us/img-1.png";
 import imgRight from "../../../../../public/assets/mini-about-us/img-2.png";
-
 import styles from "./MiniAboutUsSection.module.scss";
 
 const MiniAboutUsSection = () => {
-  const [coords, setCoords] = useState({ x: 0, y: 0 });
+  const [coords, setCoords] = useState({ x: -15, y: -15 });
   const [top, setTop] = useState(280);
   const handleMouseOver = (event: any) => {
     const rect = event.target.getBoundingClientRect();
@@ -72,7 +69,10 @@ const MiniAboutUsSection = () => {
 
                 <div
                   className={`${styles.about__img_right}`}
-                  style={{ top: `${top}px` }}
+                  style={{
+                    top: `${top}px`,
+                    transform: `translate(${0}px, ${top}px)`,
+                  }}
                   ref={ref}
                 >
                   <Image
@@ -82,8 +82,11 @@ const MiniAboutUsSection = () => {
                     alt="right-image"
                   />
                   <div className={`${styles.shape}`}>
-                    <div className="secondary" data-speed="0.9"></div>
-                    <div className="primary"></div>
+                    <div
+                      className={`${styles.secondary}`}
+                      data-speed="0.9"
+                    ></div>
+                    <div className={`${styles.primary}`}></div>
                   </div>
                 </div>
               </div>
@@ -96,13 +99,11 @@ const MiniAboutUsSection = () => {
                   world’s biggest agencies and brands because they trust our
                   expertise
                 </p>
-                <div
-                  className={`cursor-btn ${styles.btn_wrapper}`}
-                  onMouseOver={handleMouseOver}
-                >
+                <div className={`cursor-btn ${styles.btn_wrapper}`}>
                   <a
                     className={`${styles.btn_item} ${styles.wc_btn_primary} btn_hover`}
                     href="about.html"
+                    onMouseOver={handleMouseOver}
                   >
                     <span
                       style={{

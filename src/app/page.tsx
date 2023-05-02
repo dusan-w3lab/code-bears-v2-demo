@@ -6,7 +6,7 @@ import CaseStudies from "./components/homepage-sections/case-studies/CaseStudies
 import Portfolio from "./components/homepage-sections/case-studies/case-studies-2";
 import HowWeDoIt from "./components/homepage-sections/how-we-do-It/HowWeDoIt";
 import TestimonialsSection from "./components/homepage-sections/testimonials-section/testimonials-section";
-import Homepage from './homepage/page'
+import Homepage from "./homepage/page";
 
 import styles from "./page.module.css";
 
@@ -20,7 +20,7 @@ export default function homepage() {
       <HorizontalLine />
       <CaseStudies />
       {/* <Portfolio /> */}
-      
+
       {/* <HowWeDoIt /> */}
       <TestimonialsSection />
       {/* <Homepage /> */}
