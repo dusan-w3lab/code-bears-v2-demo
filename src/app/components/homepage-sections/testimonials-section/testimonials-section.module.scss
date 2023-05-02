@@ -1,0 +1,229 @@
+@import "../../../scss/utils/variables";
+
+.testimonial__area-4 {
+    overflow: hidden;
+    text-align: center;
+}
+
+.testimonial__pt {
+    padding-top: 100px;
+}
+
+.line_4 {
+  position: relative;
+}
+
+.line-col-4 div {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: $--white-2;
+}
+.line-col-4 div:nth-child(2) {
+  left: 33.33%;
+}
+.line-col-4 div:nth-child(3) {
+  left: 66.66%;
+}
+.line-col-4 div:nth-child(4) {
+  left: 100%;
+}
+
+.testimonial__sec-title {
+  padding-bottom: 60px;
+}
+.testimonial__sec-title p {
+  font-size: 18px;
+  color: $--black-3;
+  max-width: 500px;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 767px) {
+  .testimonial__sec-title p {
+    width: 100%;
+    font-size: 16px;
+  }
+}
+
+.sec-subtile-6 {
+  font-size: 16px;
+  color: $--black-2;
+  line-height: 1.3;
+  padding: 2px 14px 3px;
+  font-weight: 400;
+  border: 1px solid $--gray-16;
+  display: inline-block;
+  margin-bottom: 17px;
+}
+@media only screen and (max-width: 767px) {
+  .sec-subtile-6 {
+    margin-bottom: 10px;
+  }
+}
+
+.sec-title-6 {
+  font-size: 50px;
+  color: $--black-2;
+  font-weight: 500;
+  line-height: 1.13;
+  padding-bottom: 15px;
+}
+@media only screen and (max-width: 767px) {
+  .sec-title-6 {
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .sec-title-6 {
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .sec-title-6 {
+    font-size: 36px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .sec-title-6 {
+    font-size: 45px;
+  }
+}
+
+.testimonial__slider-4 {
+  padding-bottom: 20px;
+  height: 100%;
+  width: 98%;
+  margin-left: 11px;
+}
+.testimonial__slider-4 .prev-button:hover,
+.testimonial__slider-4 .next-button:hover {
+  color: $--lime;
+}
+@media only screen and (max-width: 767px) {
+  .testimonial__slider-4 {
+    width: 93%;
+    padding-bottom: 60px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .testimonial__slider-4 {
+    width: 97%;
+    padding-bottom: 80px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .testimonial__slider-4 {
+    padding-bottom: 100px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .testimonial__slider-4 {
+    padding-bottom: 110px;
+  }
+}
+
+.testimonial__slide-4 {
+  background-color: $--gray-22;
+  padding: 50px 50px 44px 50px;
+  text-align: left;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .testimonial__slide-4 {
+    padding: 35px 30px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .testimonial__slide-4 {
+    padding: 35px 30px 30px 30px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .testimonial__slide-4 {
+    padding: 35px 30px;
+  }
+}
+
+.testimonial__img-4 {
+  margin-bottom: 42px;
+  border-radius: 100px;
+  width: 85px;
+  height: 85px;
+}
+
+.testimonial__info-4 p {
+  color: $--black-3;
+  font-weight: 400;
+  line-height: 1.5;
+  padding-bottom: 19px;
+  text-align: left;
+}
+
+.testimonial__feedback-4 {
+  font-size: 14px;
+  font-weight: 400;
+  color: $--black-2;
+  padding: 3px 10px;
+  margin-bottom: 18px;
+  display: inline-block;
+  line-height: 1.3;
+  background-color: $--gray-23;
+}
+
+.testimonial__name-4 {
+  font-size: 18px;
+  font-weight: 500;
+  color: $--black;
+  line-height: 1.3;
+}
+
+.testimonial__role-4 {
+  font-size: 14px;
+  color: $--black-3;
+  font-weight: 400;
+}
+
+.testimonial__btn-4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 160px;
+    padding-top: 68px;
+    position: relative;
+    z-index: 999;
+}
+
+@media only screen and (max-width: 767px) {
+    .testimonial__btn-4 {
+        padding-top: 35px;
+    }
+}
+
+.testimonial__btn-4 i {
+    font-size: 18px;
+}
+
+.testimonial__pagination-4 {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 30px;
+    bottom: 1px;
+    z-index: -1;
+}

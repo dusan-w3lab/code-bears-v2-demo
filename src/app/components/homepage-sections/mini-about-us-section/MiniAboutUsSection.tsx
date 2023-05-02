@@ -46,7 +46,7 @@ const MiniAboutUsSection = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [window.pageYOffset, top, scrollDir]);
-  console.log(window.pageYOffset);
+
   return (
     <section className={`${styles.about__area}`}>
       <div className={`container ${styles.line} g-0`}>
