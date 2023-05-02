@@ -4,7 +4,7 @@ import ServicesSection from "./components/homepage-sections/services-section/Ser
 import HorizontalLine from "./components/layout/layout-elements/horizontal-line/HorizontalLine";
 import CaseStudies from "./components/homepage-sections/case-studies/CaseStudies";
 import HowWeDoIt from "./components/homepage-sections/how-we-do-It/HowWeDoIt";
-import Homepage from './homepage/page'
+import Homepage from "./homepage/page";
 
 import styles from "./page.module.css";
 
@@ -17,7 +17,7 @@ export default function homepage() {
       <ServicesSection />
       <HorizontalLine />
       <CaseStudies />
-      {/* <HowWeDoIt /> */}
+      <HowWeDoIt />
       <Homepage />
     </main>
   );
