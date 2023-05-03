@@ -11,7 +11,7 @@ const HowWeDoIt = () => {
   return (
     <section className={`${styles.workflow__area}`}>
       <div
-        className={`container g-0 ${styles.line} ${styles.h_w_w} pt-140 pb-140`}
+        className={`container g-0 ${styles.line} ${styles.h_w_w} ${styles["pt-140"]} ${styles["pb-140"]}`}
       >
         <div className={`${styles.line_3}`}></div>
         <div className="row">
