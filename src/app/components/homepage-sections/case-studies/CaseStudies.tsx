@@ -160,6 +160,10 @@ const CaseStudies = () => {
                 </div>
               </SwiperSlide>
             </div>
+
+            <div className="portfolio__slider-2-pagination--">
+              <div className="swiper-pagination circle-pagination right"></div>
+            </div>
           </Swiper>
         </div>
       </div>
