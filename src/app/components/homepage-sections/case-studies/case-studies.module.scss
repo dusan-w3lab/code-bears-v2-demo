@@ -4,6 +4,7 @@
 .portfolio__area-2 {
     overflow: hidden;
     position: relative;
+    background-color: #1E1E1E;
   }
   .portfolio__area-2::after {
     position: absolute;
@@ -124,7 +125,7 @@
     font-weight: 500;
     font-size: 32px;
     line-height: 1;
-    color: $--black-2;
+    color: #fff;
     text-align: right;
   }
   @media only screen and (min-width: 1400px) and (max-width: 1919px) {
@@ -168,15 +169,7 @@
     position: relative;
     height: 100vh;
   }
-  .portfolio__slider-2::after {
-    position: absolute;
-    content: "";
-    width: 1px;
-    height: 100%;
-    left: 50%;
-    top: 0;
-    background: $--white-4;
-  }
+
   .portfolio__slider-2::after {
     z-index: 9;
   }
@@ -204,7 +197,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background-color: $--white;
+    background: #1E1E1E;
   }
   @media only screen and (max-width: 767px) {
     .portfolio__slide-2 {
@@ -255,6 +248,7 @@
       max-width: 520px;
       line-height: 52px;
       padding-bottom: 47px;
+      color: #fff;
     }
   }
   @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -278,6 +272,7 @@
     font-size: 18px;
     line-height: 1.4;
     padding-bottom: 50px;
+    color: #fff;
   }
   @media only screen and (max-width: 767px) {
     .portfolio__slide-2 p {
@@ -288,7 +283,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
-    color: $--black-2;
+    color: #fff;
   }
   .portfolio__slide-2 .btn-common:hover {
     color: $--black-3;

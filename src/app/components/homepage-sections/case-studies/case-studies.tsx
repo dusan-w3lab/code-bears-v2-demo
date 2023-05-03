@@ -3,18 +3,17 @@
 import SwiperCore, { Pagination, Navigation, EffectFade, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Image from 'next/image';
-import Link from 'next/link';
 
 import CaseImg1 from '../../../../../public/assets/case-studies/img-1.png'
 
-import styles from './case-studies-2.module.scss'
+import styles from './case-studies.module.scss'
 import 'swiper/css';
 import 'swiper/css/pagination';
 
 SwiperCore.use([Navigation, Pagination]);
 SwiperCore.use([Autoplay]);
 
-export default function Portfolio() {
+export default function CaseStudies() {
   
   return (
     <section className={styles['portfolio__area-2']}>
@@ -25,10 +24,6 @@ export default function Portfolio() {
               <h2 className={styles['sec-title-3']}>
                 Selected Projects
               </h2>
-              {/* <p className={styles['sec-text']}>
-                Worked with global brands & agency at the intersection of flat
-                design and digitalasdasd technology.
-              </p> */}
             </div>
           </div>
         </div>

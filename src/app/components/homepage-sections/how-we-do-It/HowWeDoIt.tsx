@@ -1,7 +1,9 @@
 "use client";
 import React from "react";
+
 import SwiperCore, { Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+
 import "swiper/swiper.min.css";
 import styles from "./HowWeDoIt.module.scss";
 
@@ -11,7 +13,7 @@ const HowWeDoIt = () => {
   return (
     <section className={`${styles.workflow__area}`}>
       <div
-        className={`container g-0 ${styles.line} ${styles.h_w_w} ${styles["pt-140"]} ${styles["pb-140"]}`}
+        className={`container g-0 ${styles.line} ${styles.h_w_w} ${styles["pt-100"]} ${styles["pb-140"]}`}
       >
         <div className={`${styles.line_3}`}></div>
         <div className="row">
