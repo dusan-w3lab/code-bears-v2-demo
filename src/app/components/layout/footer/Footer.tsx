@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./footer.module.scss";
+import styles from "./Footer.module.scss";
 import footerImg from "../../../../../public/assets/footer-imgs/footer.jpg";
 import Image from "next/image";
 
