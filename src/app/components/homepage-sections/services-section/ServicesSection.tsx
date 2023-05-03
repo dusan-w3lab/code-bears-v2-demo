@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
-
-import Card from './Components/Cards/Card'
+import Card from "./Components/Cards/Card";
 import CardDescription from "./Components/CardDescription/CardDescription";
 
 import AppleLogo from '../../../../../public/assets/services/apple-logo.png'
@@ -75,22 +74,20 @@ const ServicesSection = () => {
       </div>
       <div className={`${styles.content} row`}>
         <div className="col-5">
-          {
-            items.map((e: any, index: number) => {
-              return (
-                <div
-                  className={`
+          {items.map((e: any, index: number) => {
+            return (
+              <div
+                className={`
                               ${styles.card_wrapper} 
                               ${e.id === selected && styles.active_card}
                             `}
-                  key={e.id}
-                  onClick={() => setSelected(e.id)}
-                >
-                  <Card title={e.name} icon={e.icon} />
-                </div>
-              );
-            })
-          }
+                key={e.id}
+                onClick={() => setSelected(e.id)}
+              >
+                <Card title={e.name} icon={e.icon} />
+              </div>
+            );
+          })}
         </div>
         <div className={`col-6 ${styles.card_desc}`}>
           <CardDescription text={items[selected].description} techStackIcons={items[selected].techStackIcons} />
